@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   
   root 'static_pages#home'
-  get 'help', to: 'static_pages#help' #This creates help_path /help, and help_url www.app.com/help
-  get 'about', to: 'static_pages#about'
-  get 'contact', to: 'static_pages#contact'
-  get 'signup', to: 'users#new'
+  get '/help', to: 'static_pages#help' #This creates help_path /help, and help_url www.app.com/help
+  get '/about', to: 'static_pages#about'
+  get '/contact', to: 'static_pages#contact'
+  get '/signup', to: 'users#new'
 
   #Adds all routes corresponding to RESTful
   resources :users
@@ -17,4 +17,8 @@ Rails.application.routes.draw do
   #PATCH      /users/1        update              user_path(user)       Update user
   #DELETE     /users/1        destroy             user_path(user)       Delete user
 
+  #Routes for login 
+  get '/login',   to: 'sessions#new'
+  post '/login',    to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
 end
