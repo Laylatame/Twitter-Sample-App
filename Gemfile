@@ -13,6 +13,7 @@ gem 'bootsnap',                   '1.4.5', require: false
 gem "activestorage",              '>= 6.0.3.1'
 gem "actionpack",                 '>= 6.0.3.1'
 gem "activesupport",              '>= 6.0.3.1'
+gem "websocket-extensions",       '0.1.4'
 
 
 group :development, :test do
