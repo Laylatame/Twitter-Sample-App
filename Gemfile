@@ -14,6 +14,9 @@ gem "activestorage",              '>= 6.0.3.1'
 gem "actionpack",                 '>= 6.0.3.1'
 gem "activesupport",              '>= 6.0.3.1'
 gem "websocket-extensions",       '0.1.4'
+gem 'faker',                      '2.1.2'
+gem 'will_paginate',              '3.1.8'
+gem 'bootstrap-will_paginate',    '1.0.0'
 
 
 group :development, :test do
